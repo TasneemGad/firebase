@@ -1,0 +1,21 @@
+<form [formGroup]="addForm" class="w-75 mx-auto" (ngSubmit)="addAds()">
+  <input type="text" hidden formControlName="id" class="form-control">
+  <div class="mb-3">
+    <label class="form-label">Image</label>
+    <input type="file" formControlName="image" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Video</label>
+    <input type="file" formControlName="video" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Start time</label>
+    <input type="date" formControlName="fromTime" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">End Time</label>
+    <input type="Date" formControlName="toTime" class="form-control">
+  </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+</form>

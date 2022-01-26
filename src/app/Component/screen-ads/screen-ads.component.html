@@ -1,0 +1,31 @@
+<table class="table w-75 mx-5">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Video</th>
+      <th scope="col">From Time</th>
+      <th scope="col">To Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ads of adsList| keyvalue; index as i;">
+      <th scope="row">1</th>
+      <td>k{{ads.key}}</td>
+      <td>jjj{{ads.value|json}}</td>
+      <div *ngFor="let ads of">
+
+      </div>
+      <!-- <div *ngFor="let a of ads| keyvalue">
+          yyy{{a.value}}
+      </div>
+      <div *ngFor="let a of ads| keyvalue">
+        hhhh{{a|json}}
+      </div> -->
+      <!-- <td>{{ads.video}}</td>
+      <td>{{ads.fromTime}}</td>
+      <td>{{ads.toTime}}</td> -->
+    </tr>
+  </tbody>
+</table>
+<!-- bmbb{{adsList|json}} -->
